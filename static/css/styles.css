@@ -146,3 +146,63 @@ header{
     height: 200vh;
     background-color: #fff;
 }
+
+.stats{
+    width: 100%;
+    height: 450px;
+}
+
+.column1, .column2, .column3 {
+    width: 25%;
+    height: 450px;
+    padding: 10px;
+    margin-top: 10px;
+    float: left;
+    border-right: 2px solid rgba(0, 0, 0,.05);
+}
+
+.column4 {
+    width: 25%;
+    height: 450px;
+    padding: 10px;
+    margin-top: 10px;
+    float: right;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px;
+    grid-template-areas: "text";
+    
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text h1 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+.card-text span {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
