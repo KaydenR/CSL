@@ -27,10 +27,10 @@
                         <a href="#" class="nav-link">About</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Schedule</a>
+                        <a href="#" class="nav-link">Schedule Call</a>
                     </li>
                 </ul>
-                <a href="#" id="nav-cta">Contact</a>
+                <a href="#" id="nav-cta">Find Home</a>
             </nav>
         </div>
     </header>
@@ -38,39 +38,92 @@
     <section class="hero">
         <div class="hero-container">
             <img src="static/img/AC.png" class="hero-logo" alt="allcity">
-            <img src="static/img/CSL1.png" class="csl-logo" alt="allcity">
+            <img src="static/img/CSL1.png" class="csl-logo" alt="cslLogo">
         </div>
     </section>
     <section id="community" class="demo-content">
-                <div class="card">
-                    <div class="card-text">
-                        <h1>Median Days on Market</h1>
-                        <span>37 Days</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <h1>Median Price Per Square Foot</h1>
-                        <span>$220 per sqft</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <h1>Median Home Value in China Spring</h1>
-                        <span>$360,000</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-text">
-                        <h1>Median Home Value in McLennan</h1>
-                        <span>$142,600</span>
-                    </div>
-                </div>
+        <div class="card">
+            <div class="card-text">
+                <h1>Median Days on Market</h1>
+                <span>37 Days</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-text">
+                <h1>Median Price Per Square Foot</h1>
+                <span>$220 per sqft</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-text">
+                <h1>Median Home Value in China Spring</h1>
+                <span>$360,000</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-text">
+                <h1>Median Home Value in McLennan</h1>
+                <span>$142,600</span>
+            </div>
+        </div>
     </section>
     <section id="about" class="about-content">
         <div class="about-paragraphs">
-
+            <div class="grid-container">
+                <div class="item1">Spacious homes and lots of land. That’s what life is like in China Spring, Texas. The short number of median days on market shows that there is still undeniably high demand to move to the China Spring area. With a median price per square foot of nearly double that of the Waco area and with multiple acres accompanying each property, these homes and acreages are seen as a much better investment opportunity than anywhere else in Central Texas.</div>
+                <a class="source-link" href="https://www.movoto.com/china-spring-tx/market-trends/">Source</a>
+            </div>
         </div>
+    </section>
+    <section id="schedule" class="schedule-content">
+        <!-- Calendly inline begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/projdevkr"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline end -->  
+    </section>
+    <section id="contact" class="contact-me">
+        <form>
+            <fieldset>
+                <label>First Name: <input type="text" id="first-name" required/></label>
+                <br>
+                <label>Last Name: <input type="text" id="last-name" required/></label>
+                <br>
+                <label>Phone Number: <input type="text" id="email" required/></label>
+                <br>
+                <label>Email: <input type="text" id="email" required/></label>
+                <br>
+                <label>Price Range: <br><input type="text" class="min" id="min" placeholder="Min" required/> - <input type="text" class="max" id="max" placeholder="Max" required/></label>
+            </fieldset>
+            <fieldset>
+                <div class="selectors">
+                    <div class="selector-items">
+                        <h2>Bedrooms</h2>
+                        <label class="radio-selectors"><input type="radio" class="inline" name="bedrooms" required/> 1+ </label>
+                        <label class="radio-selectors"><input type="radio" class="inline" name="bedrooms" required/> 2+ </label>
+                        <label class="radio-selectors"><input type="radio" class="inline" name="bedrooms" required/> 3+ </label>
+                        <label class="radio-selectors"><input type="radio" class="inline" name="bedrooms" required/> 4+ </label>
+                        <label class="radio-selectors"><input type="radio" class="inline" name="bedrooms" required/> 5+ </label>
+                    </div>
+                    <div class="selector-items">
+                        <h2>Bathrooms</h2>
+                        <label class="radio-selectors"><input type="radio" class="inline" name="bathrooms" required/> 1+ </label>
+                        <label class="radio-selectors"><input type="radio" class="inline" name="bathrooms" required/> 2+ </label>
+                        <label class="radio-selectors"><input type="radio" class="inline" name="bathrooms" required/> 3+ </label>
+                        <label class="radio-selectors"><input type="radio" class="inline" name="bathrooms" required/> 4+ </label>
+                        <label class="radio-selectors"><input type="radio" class="inline" name="bathrooms" required/> 5+ </label>
+                    </div>
+                    <div class="selector-items">
+                        <h2>Home Types</h2>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> House </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Townhome </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Multi-family </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Condos/Co-op </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Lots/Land </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Manufactured </label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </section>
 
     <script>
