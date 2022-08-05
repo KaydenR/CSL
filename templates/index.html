@@ -84,17 +84,17 @@
     <section id="contact" class="contact-me">
         <form>
             <fieldset>
-                <label>First Name: <input type="text" id="first-name" required/></label>
+                <label>First Name: <input type="text" id="first-name" name="first-name" required/></label>
                 <br>
-                <label>Last Name: <input type="text" id="last-name" required/></label>
+                <label>Last Name: <input type="text" id="last-name" name="last-name" required/></label>
                 <br>
-                <label>Phone Number: <input type="text" id="email" required/></label>
+                <label>Phone Number: <input type="text" id="phone-number" name="phone-number" required/></label>
                 <br>
-                <label>Email: <input type="text" id="email" required/></label>
+                <label>Email: <input type="text" id="email" name="email" required/></label>
                 <br>
                 <label>Price Range: <br><input type="text" class="min" id="min" placeholder="Min" required/> - <input type="text" class="max" id="max" placeholder="Max" required/></label>
             </fieldset>
-            <fieldset>
+            <fieldset class="selector-fields">
                 <div class="selectors">
                     <div class="selector-items">
                         <h2>Bedrooms</h2>
@@ -122,6 +122,27 @@
                         <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Manufactured </label>
                     </div>
                 </div>
+            </fieldset>
+            <fieldset class="selector-fields-mortgage">
+                <h2>Have you been preapproved for a mortgage?</h2>
+                <div class="selector-items">
+                    <label class="radio-selectors"><input type="radio" class="inline" name="mortgage" required/> Yes </label>
+                    <label class="radio-selectors"><input type="radio" class="inline" name="mortgage" required/> Not yet </label>
+                    <label class="radio-selectors"><input type="radio" class="inline" name="mortgage" required/> Not yet - please introduce me to a mortgage broker </label>
+                    <label class="radio-selectors"><input type="radio" class="inline" name="mortgage" required/> I'm offering cash </label>
+                </div>
+            </fieldset>
+            <fieldset class="selector-fields-property">
+                <h2>Do you have a property to sell?</h2>
+                <div class="selector-items">
+                    <label class="radio-selectors"><input type="radio" class="inline" name="property-to-sell" required/> Yes </label>
+                    <label class="radio-selectors"><input type="radio" class="inline" name="property-to-sell" required/> No </label>
+                </div>
+            </fieldset>
+            <fieldset class="contact-field">
+                <h2>Any additional information:</h2>
+                <textarea row="3" cols="30" name="comment-box" placeholder="Questions, comments or concerns..."></textarea>
+                <input class="submit grow" type="submit" value="Send message"/>
             </fieldset>
         </form>
     </section>
