@@ -15,6 +15,11 @@
 </head>
 
 <body id="page-top">
+    <div class="hamburger-button scrolling-active" onclick="xFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
     <header>
         <div class="container">
             <nav class="nav">
@@ -153,6 +158,10 @@
             let windowPosition = window.scrollY > 0;
             header.classList.toggle('scrolling-active', windowPosition);
         })
+
+        function xFunction(x) {
+            x.classList.toggle("change");
+        }
     </script>
 </body>
 
