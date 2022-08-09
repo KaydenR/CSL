@@ -10,6 +10,7 @@
 
     <title>China Spring Living</title>
 
+    <link rel="icon" href="static/img/ACicon.png" type="image/icon type">
     <link rel="stylesheet" href="static/css/styles.css"/>
 
 </head>
@@ -94,13 +95,16 @@
         </div>
     </section>
     <section id="schedule" class="schedule-content">
-        <!-- Calendly inline begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/projdevkr"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <!-- Calendly inline end -->  
+        <!-- Calendly inline widget begin --> 
+        <div class="calendly-inline-widget" data-url="https://calendly.com/nelsonsmithrealty" style="min-width:320px;height:630px;"></div> 
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> 
+        <!-- Calendly inline widget end -->
     </section>
     <section id="contact" class="contact-me">
-        <form>
+        <form action="https://formsubmit.io/send/d9c06df3-ce81-4973-92e0-9fcebcd6e557" method="POST">
+        <!--Honeypot-->
+        <input type="text" name="_honey" style="display: none;">
+
             <fieldset>
                 <label>First Name: <input type="text" id="first-name" name="first-name" required/></label>
                 <br>
@@ -110,51 +114,51 @@
                 <br>
                 <label>Email: <input type="text" id="email" name="email" required/></label>
                 <br>
-                <label>Price Range: <br><input type="text" class="min" id="min" placeholder="Min" required/> - <input type="text" class="max" id="max" placeholder="Max" required/></label>
+                <label>Price Range: <br><input type="text" class="min" name="min" id="min" placeholder="Min" required/> - <input type="text" class="max" name="max" id="max" placeholder="Max" required/></label>
             </fieldset>
             <fieldset class="selector-fields">
                 <div class="selectors">
                     <div class="selector-items">
                         <h2>Bedrooms</h2>
-                        <label class="radio-selectors"><input type="radio" class="inline" name="bedrooms" required/> 1+ </label>
-                        <label class="radio-selectors"><input type="radio" class="inline" name="bedrooms" required/> 2+ </label>
-                        <label class="radio-selectors"><input type="radio" class="inline" name="bedrooms" required/> 3+ </label>
-                        <label class="radio-selectors"><input type="radio" class="inline" name="bedrooms" required/> 4+ </label>
-                        <label class="radio-selectors"><input type="radio" class="inline" name="bedrooms" required/> 5+ </label>
+                        <label class="radio-selectors"><input type="checkbox" class="inline" name="bedrooms-1+"/> 1+ </label>
+                        <label class="radio-selectors"><input type="checkbox" class="inline" name="bedrooms-2+"/> 2+ </label>
+                        <label class="radio-selectors"><input type="checkbox" class="inline" name="bedrooms-3+"/> 3+ </label>
+                        <label class="radio-selectors"><input type="checkbox" class="inline" name="bedrooms-4+"/> 4+ </label>
+                        <label class="radio-selectors"><input type="checkbox" class="inline" name="bedrooms-5+"/> 5+ </label>
                     </div>
                     <div class="selector-items">
                         <h2>Bathrooms</h2>
-                        <label class="radio-selectors"><input type="radio" class="inline" name="bathrooms" required/> 1+ </label>
-                        <label class="radio-selectors"><input type="radio" class="inline" name="bathrooms" required/> 2+ </label>
-                        <label class="radio-selectors"><input type="radio" class="inline" name="bathrooms" required/> 3+ </label>
-                        <label class="radio-selectors"><input type="radio" class="inline" name="bathrooms" required/> 4+ </label>
-                        <label class="radio-selectors"><input type="radio" class="inline" name="bathrooms" required/> 5+ </label>
+                        <label class="radio-selectors"><input type="checkbox" class="inline" name="bathrooms-1+"/> 1+ </label>
+                        <label class="radio-selectors"><input type="checkbox" class="inline" name="bathrooms-2+"/> 2+ </label>
+                        <label class="radio-selectors"><input type="checkbox" class="inline" name="bathrooms-3+"/> 3+ </label>
+                        <label class="radio-selectors"><input type="checkbox" class="inline" name="bathrooms-4+"/> 4+ </label>
+                        <label class="radio-selectors"><input type="checkbox" class="inline" name="bathrooms-5+"/> 5+ </label>
                     </div>
                     <div class="selector-items">
                         <h2>Home Types</h2>
-                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> House </label>
-                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Townhome </label>
-                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Multi-family </label>
-                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Condos/Co-op </label>
-                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Lots/Land </label>
-                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types" required/> Manufactured </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types-house"/> House </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types-townhome"/> Townhome </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types-multifamily"/> Multi-family </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types-condoscoop"/> Condos/Co-op </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types-lotsland"/> Lots/Land </label>
+                        <label class="house-selectors"><input type="checkbox" class="inline" name="house-types-manufactured"/> Manufactured </label>
                     </div>
                 </div>
             </fieldset>
             <fieldset class="selector-fields-mortgage">
                 <h2>Have you been preapproved for a mortgage?</h2>
                 <div class="selector-items">
-                    <label class="radio-selectors"><input type="radio" class="inline" name="mortgage" required/> Yes </label>
-                    <label class="radio-selectors"><input type="radio" class="inline" name="mortgage" required/> Not yet </label>
-                    <label class="radio-selectors"><input type="radio" class="inline" name="mortgage" required/> Not yet - please introduce me to a mortgage broker </label>
-                    <label class="radio-selectors"><input type="radio" class="inline" name="mortgage" required/> I'm offering cash </label>
+                    <label class="radio-selectors"><input type="checkbox" class="inline" name="mortgage-yes"/> Yes </label>
+                    <label class="radio-selectors"><input type="checkbox" class="inline" name="mortgage-notyet"/> Not yet </label>
+                    <label class="radio-selectors"><input type="checkbox" class="inline" name="mortgage-introduce"/> Not yet - please introduce me to a mortgage broker </label>
+                    <label class="radio-selectors"><input type="checkbox" class="inline" name="mortgage-cash"/> I'm offering cash </label>
                 </div>
             </fieldset>
             <fieldset class="selector-fields-property">
                 <h2>Do you have a property to sell?</h2>
                 <div class="selector-items">
-                    <label class="radio-selectors"><input type="radio" class="inline" name="property-to-sell" required/> Yes </label>
-                    <label class="radio-selectors"><input type="radio" class="inline" name="property-to-sell" required/> No </label>
+                    <label class="radio-selectors"><input type="checkbox" class="inline" name="property-to-sell-yes"/> Yes </label>
+                    <label class="radio-selectors"><input type="checkbox" class="inline" name="property-to-sell-no"/> No </label>
                 </div>
             </fieldset>
             <fieldset class="contact-field">

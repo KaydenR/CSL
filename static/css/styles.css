@@ -289,24 +289,17 @@ fieldset {
 }
 
 .selector-fields {
-    height: 40vh;
+    height: 42vh;
     border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid #d3d3d3;
-}
-
-.selector-fields {
-    height: 40vh;
-    border: none;
-    padding: 2rem 0;
+    padding: 1rem 0;
     border-bottom: 3px solid #d3d3d3;
 
 }
 
 .selector-fields-property {
-    height: 20vh;
+    height: 22vh;
     border: none;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     border-bottom: 3px solid #d3d3d3;
 }
 
@@ -389,7 +382,6 @@ textarea {
     border-radius: 5px;
     border-color: #151515;
     background-color: #fff;
-    min-width: 300px;
 }
 
 .grow {
@@ -402,13 +394,14 @@ textarea {
 
 
 
-
+/*Enables Hamburger Menu*/
 @media (max-width: 710px){
 
     .hamburger-container {
         width: 100%;
         height: 20vh;
         position: fixed;
+        z-index: 3;
     }
 
     .hamburger-button{
@@ -475,6 +468,21 @@ textarea {
     }
 }
 
+@media(max-width: 1024px){
+
+    .about-paragraphs{
+        display: grid;
+        width: 975px;
+        height: 300px;
+        
+        border-radius: 18px;
+        background: white;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+        text-align: center;
+    }
+
+}
+
 @media (max-width: 768px){
 
     .hero-logo {
@@ -533,6 +541,15 @@ textarea {
 
 @media (max-width: 425px){
 
+    .demo-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5rem;
+        padding: 5rem;
+        background-color: #fff;
+    }
+
     .about-paragraphs{
         display: grid;
         width: 400px;
@@ -550,6 +567,136 @@ textarea {
         padding: 10px;
         margin-top: auto;
         font-size: 15px;
+    }
+
+    .selector-fields {
+        height: 35vh;
+        border: none;
+        padding: 1.2rem 0;
+        border-bottom: 3px solid #d3d3d3;
+    
+    }
+
+    .selector-fields-property {
+        height: 15vh;
+        border: none;
+        padding: 0.5rem 0;
+        border-bottom: 3px solid #d3d3d3;
+    }
+
+    .house-selectors, .radio-selectors {
+        font-size: 10px;
+    }
+
+    h2 {
+        margin: 0.2em auto;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .schedule-content{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-me {
+        width: 100%;
+        height: 130vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        width: 60vw;
+        height: 130vh;
+        max-width: 500px;
+        min-width: 200px;
+        margin: 0 auto;
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    .contact-field {
+        height: 25vh;
+        justify-content: center;
+    }
+
+    .submit[type="submit"] {
+        display: block;
+        width: 60%;
+        margin: 1em auto;
+        height: 3em;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        border-color: #151515;
+        background-color: #fff;
+    }
+
+}
+
+@media (max-width: 375px){
+
+    .about-paragraphs{
+        display: grid;
+        width: 350px;
+        height: 230px;
+        
+        border-radius: 18px;
+        background: white;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+        text-align: center;
+    }
+
+    .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 5px;
+        margin-top: auto;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 375px){
+
+    .about-paragraphs{
+        display: grid;
+        width: 300px;
+        height: 230px;
+        
+        border-radius: 18px;
+        background: white;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+        text-align: center;
+    }
+
+    .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 1px;
+        margin-top: auto;
+        font-size: 14px;
+    }
+
+    .selector-fields {
+        height: 30vh;
+        border: none;
+        padding: 1.2rem 0;
+        border-bottom: 3px solid #d3d3d3;
+    
+    }
+
+    h2 {
+        margin: 0.2em auto;
+        text-align: center;
+        font-size: 10px;
     }
 
 }
