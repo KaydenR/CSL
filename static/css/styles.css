@@ -352,6 +352,10 @@ input {
     margin: auto;
 }
 
+h1 {
+    text-align: center;
+}
+
 h2 {
     margin: 1em auto;
     text-align: center;
