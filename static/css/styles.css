@@ -50,8 +50,7 @@ header{
 .nav .logo{
     display: inline-block;
     vertical-align: top;
-    width: 200px;
-    height: 200px;
+    width: 150px;
     margin-right: 20px;
 }
 
@@ -141,15 +140,21 @@ header{
 }
 
 .hero-logo {
-    width: 250px;
-    float: right;
-    margin-right: 25%;
+    width: 350px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
 }
 
 .csl-logo {
-    width: 250px;
-    float: left;
-    margin-left: 25%;
+    width: 325px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
 }
 
 .demo-content {
@@ -394,6 +399,15 @@ textarea {
 
 .submit[type="submit"]:hover {
     transform: scale(0.8);
+}
+
+.iabs{
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-size: 10px;
+    border-top: 3px solid #d3d3d3;
 }
 
 
