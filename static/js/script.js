@@ -2,7 +2,7 @@ window.addEventListener("scroll", function () {
     let header = document.querySelector("header");
     let windowPosition = window.scrollY > 0;
     header.classList.toggle("scrolling-active", windowPosition);
-})
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
